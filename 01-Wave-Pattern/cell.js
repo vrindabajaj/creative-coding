@@ -1,7 +1,7 @@
 class Cell {
-    constructor(x0, y0, r){
+    constructor(x0, y0, r, angle){
         this.radius = r;
-        this.angle = 0;
+        this.angle = angle;
         this.x0 = x0;
         this.y0 = y0;
     }

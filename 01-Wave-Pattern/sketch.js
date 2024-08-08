@@ -1,6 +1,7 @@
 let grid = [];
 let cols = 4;
 let rows = 4;
+let loc = 50;
 
 function setup() {
   createCanvas(400, 400);
@@ -10,7 +11,8 @@ function setup() {
   for (let i = 0; i < cols; i++){
     grid[i] = [];
     for (let j = 0; j < rows; j++){
-      grid[i][j] = new Cell(colSize * i + (colSize/2), rowSize * j + (rowSize/2), rowSize/2);
+      grid[i][j] = new Cell(colSize*i + (colSize/2), rowSize*j + (rowSize/2), 
+        rowSize/2, i*loc + j*loc);
     }
   }
 }
