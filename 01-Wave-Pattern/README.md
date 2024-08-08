@@ -1,2 +1,2 @@
-# creative-coding
+# Wave Pattern
 ![](wave-pattern.gif)
