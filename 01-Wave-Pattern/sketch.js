@@ -1,7 +1,7 @@
 let grid = [];
-let cols = 4;
-let rows = 4;
-let loc = 50;
+let cols = 20;
+let rows = 20;
+let loc = 100;
 
 function setup() {
   createCanvas(400, 400);

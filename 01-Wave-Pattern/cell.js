@@ -12,8 +12,9 @@ class Cell {
         this.angle += 0.01;
     }
     display(){
-        ellipse(this.x0, this.y0, this.radius * 2, this.radius * 2);
-        line(this.x0, this.y0, this.x0 + this.x, this.y0 + this.y);
-        ellipse(this.x0 + this.x, this.y0 + this.y, 10, 10);
+        // ellipse(this.x0, this.y0, this.radius * 2, this.radius * 2);
+        // line(this.x0, this.y0, this.x0 + this.x, this.y0 + this.y);
+        fill(0)
+        ellipse(this.x0 + this.x, this.y0 + this.y, 7, 7);
     }
 }
