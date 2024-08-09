@@ -15,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(255);
   translate(width/2, height/2);
 
   push();
