@@ -1,9 +1,10 @@
 class Circle {
-    constructor(angle){
+    constructor(angle, colour){
         this.radius = 100;
         this.angle = angle;
         this.size = 100;
         this.direction = -1;
+        this.colour = colour;
     }
 
     update(){
@@ -15,7 +16,9 @@ class Circle {
         }
         this.radius = this.radius + this.direction;
     }
+    
     display(){
+        fill(this.colour);
         ellipse(this.x, this.y, this.size, this.size);
         //line(0, 0, this.x, this.y)
     }
