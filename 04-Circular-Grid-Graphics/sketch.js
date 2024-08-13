@@ -1,5 +1,6 @@
 let cols, rows;
-let spacing = 50;
+let spacing = 20;
+let sizes = [];
 
 function setup() {
   createCanvas(400, 400);
@@ -8,12 +9,15 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(255);
   translate(spacing/2, spacing/2);
 
   for(let i = 0; i < cols; i++){
     for(let j = 0; j < rows; j++){
-      ellipse(i*spacing, j*spacing, spacing, spacing);
+      sizes[i] = ((j+3)/rows)*spacing;
+      noStroke();
+      fill(j/rows*255);
+      ellipse(i*spacing, j*spacing, sizes[i], sizes[i]);
     }
   }
 }
