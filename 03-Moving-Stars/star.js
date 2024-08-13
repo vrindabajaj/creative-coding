@@ -1,7 +1,7 @@
 class Star {
-    constructor(){
+    constructor(angle){
         this.radius = 150;
-        this.angle = 0;
+        this.angle = angle;
     }
 
     update(){
