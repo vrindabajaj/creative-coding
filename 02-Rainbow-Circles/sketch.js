@@ -4,9 +4,11 @@ let angles = [];
 let colours = [];
 
 function setup() {
+  saveGif("test.gif", 5);
   createCanvas(400, 400);
 
-  colours = [color(255, 0, 0), color(0, 255, 0), color(0, 0, 255)]
+  colours = [color(255, 0, 0), color(0, 255, 0), color(0, 0, 255)];
+  // colours = [color(255, 0, 0), color(255, 100, 0), color(255, 0, 100)];
 
   for(let i = 0; i < count; i++){
     angles[i] = (TWO_PI/count) * i;
