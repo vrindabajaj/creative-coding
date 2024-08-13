@@ -1,11 +1,12 @@
 let outer = []
-let outerNum = 12;
+let outerNum = 15;
 let outerAngles = [];
+let outerDelta = -0.005;
 
 let inner = []
-let innerNum = 3;
+let innerNum = 5;
 let innerAngles = [];
-let delta = 0.03;
+let innerDelta = 0.05;
 
 function setup() {
   createCanvas(400, 400);
@@ -21,21 +22,23 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(0);
   translate(width/2, height/2);
 
   for(let i = 0; i < outerNum; i++){
+    outer[i].angle += outerDelta;
     outer[i].update();
     outer[i].display();
   }
   for(let i = 0; i < innerNum; i++){
-    inner[i].angle += delta;
+    inner[i].angle += innerDelta;
     inner[i].update();
     inner[i].display();
   }
 
   for(let i = 0; i < outerNum; i++){
     for(let j = 0; j < innerNum; j++){
+      stroke(255);
       line(outer[i].x, outer[i].y, inner[j].x, inner[j].y);
     }
   }

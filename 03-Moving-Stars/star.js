@@ -16,6 +16,6 @@ class Star {
     }
 
     display(){
-        ellipse(this.x, this.y, 10, 10);
+        // ellipse(this.x, this.y, 10, 10);
     }
 }
