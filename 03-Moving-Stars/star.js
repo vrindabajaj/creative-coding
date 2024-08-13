@@ -1,6 +1,12 @@
 class Star {
-    constructor(angle){
-        this.radius = 150;
+    constructor(angle, inner){
+        this.inner = inner;
+        if (this.inner){
+            this.radius = 75;
+        } else {
+            this.radius = 150;
+        }
+        
         this.angle = angle;
     }
 
