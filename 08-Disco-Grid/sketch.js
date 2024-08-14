@@ -1,12 +1,12 @@
 let sizes = [];
 let cols; let rows;
-let size = 50;
+let size = 10;
 let xOff = 0; let yOff = 0;
-let inc = 5;
+let inc = 0.1;
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
 
   rectMode(CENTER);
 
@@ -30,6 +30,8 @@ function draw() {
 
   for (let i = 0; i < cols; i++){
     for (let j = 0; j < rows; j++){
+      fill(0);
+      noStroke();
       rect(i*size, j*size, sizes[i][j], sizes[i][j]);
     }
   }
